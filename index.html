@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Devika Panneer Selvam</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap">
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--text:#1d2530;--muted:#5b6674;--accent:#0a6bc2;--line:#dde2e8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f141a;--card:#171e27;--text:#e8edf3;--muted:#9aa6b4;--accent:#5aa9f0;--line:#27303b}}
+:root[data-theme="dark"]{--bg:#0f141a;--card:#171e27;--text:#e8edf3;--muted:#9aa6b4;--accent:#5aa9f0;--line:#27303b}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Raleway,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.65}
+a{color:var(--accent)}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap;padding:calc(env(safe-area-inset-top,0px) + 14px) 16px 14px;background:rgba(10,16,24,.72);backdrop-filter:blur(6px)}
+nav a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.85}
+nav a:hover{opacity:1}
+nav .brand{font-weight:800;font-size:1.15rem;opacity:1}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:110px 20px 60px;
+background:linear-gradient(rgba(8,14,22,.62),rgba(8,14,22,.78)),radial-gradient(circle at 25% 30%,#2a6fb0 0,transparent 55%),radial-gradient(circle at 80% 70%,#3b4f7a 0,transparent 55%),#0b1520;position:relative}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),rgba(255,255,255,.12) calc(25% - 1px),rgba(255,255,255,.12) 25%);pointer-events:none}
+.hero>*{position:relative}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);font-weight:800;margin:0 0 .3em}
+.hero p{font-size:clamp(1.1rem,3vw,1.7rem);font-weight:300;margin:.15em 0}
+.hero .btn{margin-top:28px}
+.btn{display:inline-block;padding:10px 22px;border:1px solid currentColor;border-radius:999px;text-decoration:none;font-weight:600;font-size:.9rem;margin:4px}
+.hero .btn{color:#fff}
+section{max-width:960px;margin:0 auto;padding:64px 20px 8px}
+h2{font-size:1.9rem;font-weight:800;margin:0 0 .6em}
+h2:after{content:"";display:block;width:48px;height:3px;background:var(--accent);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.card h3{margin:.1em 0 .1em;font-size:1.05rem}
+.card .tag{color:var(--accent);font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.card p{margin:.4em 0;color:var(--muted);font-size:.93rem}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:20px}
+.tl div{position:relative;margin-bottom:20px}
+.tl div:before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl b{display:block}
+.tl span{color:var(--muted);font-size:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.88rem}
+.sk h3{font-size:.95rem;margin:1.1em 0 .5em;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 20px 30px}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#about">About</a><a href="#research">Research</a>
+  <a class="brand" href="#top">Devika Panneer Selvam</a>
+  <a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero" id="top">
+  <h1>Hello There!</h1>
+  <p>I’m Devika Panneer Selvam</p>
+  <p>A Machine Learning &amp; Robotics Researcher</p>
+  <p>Based in Freiburg</p>
+  <a class="btn" href="#research">See my research</a>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I spent eight years as a software engineer before returning to study, and completed an M.Sc. in Computer Science at the University of Freiburg (2020–2026). My work centers on learning-based perception for robotics: asking when vision models and foundation models can be trusted, and testing it with careful experiments. I also enjoy automated machine learning, and I won the large-network track of the university’s deep learning competition in 2025.</p>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <div class="grid">
+    <div class="card"><div class="tag">Master’s thesis · 2026</div><h3>Industrial Part Classification Using LiDAR Scans</h3>
+      <p>Built a robot-arm data collection setup (ROS, LiDAR) and compared point cloud and image classifiers across lighting conditions. Under unseen lighting, the best point cloud model kept 94.9% accuracy while the best image model fell from 95.3% to 77.6%.</p></div>
+    <div class="card"><div class="tag">Master’s project · 2025/26</div><h3>Affordance Learning from Static Images</h3>
+      <p>A zero-shot pipeline that uses a vision-language model to find door parts and derive 3D manipulation trajectories, without demonstrations. Metric depth was the dominant factor for accuracy.</p>
+      <p><a href="https://github.com/DevikaPanneerSelvam/processarkit" target="_blank" rel="noopener">Code on GitHub</a></p></div>
+    <div class="card"><div class="tag">AutoML project · 2024</div><h3>Meta-Learning with TabPFN</h3>
+      <p>Predicts the best model family for unseen tabular datasets from 31 meta-features, then tunes it automatically, in about five minutes of compute.</p></div>
+    <div class="card"><div class="tag">Deep learning lab</div><h3>Knowledge Distillation Beyond Model Compression</h3>
+      <p>A team study of nine distillation methods on CIFAR-100, finding that distillation improves generalization even with a large teacher–student gap.</p></div>
+    <div class="card"><div class="tag">Award · 2025</div><h3>1st place, Flower Classification Challenge</h3>
+      <p>Large-network track of the Freiburg deep learning course competition: 97.6% accuracy on a hidden test set.</p></div>
+  </div>
+</section>
+
+<section id="journey">
+  <h2>Journey so far</h2>
+  <div class="tl">
+    <div><b>Research Assistant, KIAZ Hochschule Flensburg</b><span>2025–2026 · open-source computer use agents, mechanistic interpretability of gender bias in language models</span></div>
+    <div><b>M.Sc. Computer Science, University of Freiburg</b><span>2020–2026 · machine learning, robotics, automated machine learning</span></div>
+    <div><b>Research Assistant, IMTEK, University of Freiburg</b><span>2021–2023 · laboratory instrument control and web-based circuit simulation</span></div>
+    <div><b>Senior Software Engineer, Wipro</b><span>2012–2019 · business-critical web systems, testing, data migration, mentoring</span></div>
+    <div><b>M.S. Software Engineering, BITS Pilani</b><span>2012–2016 · work-integrated programme</span></div>
+    <div><b>B.Sc. Physics, Mathematics and Electronics, Bangalore University</b><span>2009–2012</span></div>
+  </div>
+</section>
+
+<section id="skills" class="sk">
+  <h2>Skills</h2>
+  <h3>Machine learning</h3>
+  <div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>scikit-learn</span><span>Hugging Face</span><span>NumPy</span><span>Pandas</span><span>Open3D</span></div>
+  <h3>Robotics &amp; perception</h3>
+  <div class="chips"><span>ROS</span><span>Point clouds</span><span>RGB-D</span><span>LiDAR</span></div>
+  <h3>Programming &amp; tools</h3>
+  <div class="chips"><span>Python</span><span>SQL</span><span>C#</span><span>JavaScript/TypeScript</span><span>Git</span><span>Linux</span><span>SLURM</span></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>I’m always happy to talk about research.</p>
+  <a class="btn" href="mailto:devika.selvam01@gmail.com">Email</a>
+  <a class="btn" href="https://linkedin.com/in/devikaselvam" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn" href="https://github.com/DevikaPanneerSelvam" target="_blank" rel="noopener">GitHub</a>
+</section>
+
+<footer>© 2026 Devika Panneer Selvam</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.getElementById(a.getAttribute('href').slice(1));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
